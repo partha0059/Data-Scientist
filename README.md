@@ -1,6 +1,8 @@
 # Data Scientist – Machine Learning Algorithms
 
-This repository contains a collection of Machine Learning algorithms classified by Supervised, Unsupervised learning and ML Engineering & Optimization, along with links to respective GitHub repositories for each algorithm.
+This repository contains a collection of Machine Learning algorithms classified by Supervised, Unsupervised learning and ML Engineering & Optimization, along with links to respective GitHub repositories for each algorithm. 
+
+*Each algorithm folder has been strictly isolated to contain clean, end-to-end projects comprising the Jupyter Notebook, Pickled Model, and Premium Streamlit App.*
 
 ## Learning Path
 
@@ -33,23 +35,23 @@ This repository contains a collection of Machine Learning algorithms classified 
 - **Random Forest Regression** — [California-Housing-Estimator-RF](https://github.com/partha0059/California-Housing-Estimator-RF)
   *Ensemble Methods / Project: Housing Price Regression*
 
-#### Classification
+#### Classification / Dual implementations
 - **Logistic Regression** — [Heart-Disease-Diagnostics-ML](https://github.com/partha0059/Heart-Disease-Diagnostics-ML)
   *Evaluation Metrics / Project: Cardiovascular Risk Prediction*
 - **K-Nearest Neighbors (KNN)** — [Iris-Species-Analyzer-KNN](https://github.com/partha0059/Iris-Species-Analyzer-KNN)
-  *Theory / Mathematics / Project: KNN Classification*
+  *Dual Implementations: Iris Classification App & Real Estate Estimator Regression App*
 - **Naive Bayes Algorithm** — [SMS_Spam_Project](https://github.com/partha0059/SMS_Spam_Project)
   *Theory / Markdown / NLP Project: Spam Classifier / Streamlit Deployment*
 - **Decision Tree** — [Decision-Tree-Predictors](https://github.com/partha0059/Decision-Tree-Predictors)
-  *Interactive Web App / Project: Movie/Pizza Predictor*
+  *Dual Implementations: Wine Variety Classification App & Diabetes Progression Regression App*
 - **Random Forest Classification** — [Breast-Cancer-Diagnostics-RF](https://github.com/partha0059/Breast-Cancer-Diagnostics-RF)
   *Gini vs Entropy / Ensemble Learning / Project: Cancer Diagnostic System*
 - **Support Vector Machine (SVM)** — [Digit-Recognizer-SVM](https://github.com/partha0059/Digit-Recognizer-SVM)
-  *Kernel Tricks / Project: SVM Classification*
+  *Dual Implementations: Digit Recognizer Classification App & House Valuation SVR App*
 - **Gradient Boosting** — [Diabetes-Gradient-Boosting](https://github.com/partha0059/Diabetes-Gradient-Boosting)
-  *Boosting Algorithm / Project: Diabetes Predictor*
+  *Dual Implementations: Oncology Classification App & Disease Progression Regression App*
 - **XGBoost Algorithm** — [Wine-Quality-XGBoost](https://github.com/partha0059/Wine-Quality-XGBoost)
-  *Advanced Boosting / XGBoost Classifier Implementation*
+  *Dual Implementations: Sommelier Wine Classification App & Disease Escalation Regression App*
 
 ### Unsupervised Learning
 
@@ -60,6 +62,10 @@ This repository contains a collection of Machine Learning algorithms classified 
   *Dendrograms / Project: Wine Profile Agglomeration*
 - **DBSCAN** — [DBSCAN-Density-Mapper](https://github.com/partha0059/DBSCAN-Density-Mapper)
   *Density-based Clustering / Project: Noise Detection & Mappings*
+
+#### Dimensionality Reduction
+- **PCA (Principal Component Analysis)** — [PCA-Dimensionality-Reduction](https://github.com/partha0059/PCA-Dimensionality-Reduction)
+  *Feature Transformation / Dimensionality Compression Engine App*
 
 ---
 
@@ -81,16 +87,17 @@ This repository contains a collection of Machine Learning algorithms classified 
 |---|---|---|
 | Coffee Shop Sales | Linear Regression | [Coffee_Shop_Sales_DS](https://github.com/partha0059/Coffee_Shop_Sales_DS) |
 | Heart Disease Risk | Logistic Regression | [Heart-Disease-Diagnostics-ML](https://github.com/partha0059/Heart-Disease-Diagnostics-ML) |
-| Iris Analyzer | K-Nearest Neighbors | [Iris-Species-Analyzer-KNN](https://github.com/partha0059/Iris-Species-Analyzer-KNN) |
+| Iris & Real Estate Apps | K-Nearest Neighbors | [Iris-Species-Analyzer-KNN](https://github.com/partha0059/Iris-Species-Analyzer-KNN) |
 | SMS Spam Detection | Naive Bayes | [SMS_Spam_Project](https://github.com/partha0059/SMS_Spam_Project) |
-| Movie/Pizza Predictor | Decision Tree | [Decision-Tree-Predictors](https://github.com/partha0059/Decision-Tree-Predictors) |
+| Wine & Diabetes Predictor | Decision Tree | [Decision-Tree-Predictors](https://github.com/partha0059/Decision-Tree-Predictors) |
 | Cancer Diagnostics | Random Forest (Class) | [Breast-Cancer-Diagnostics-RF](https://github.com/partha0059/Breast-Cancer-Diagnostics-RF) |
 | California Housing | Random Forest (Reg) | [California-Housing-Estimator-RF](https://github.com/partha0059/California-Housing-Estimator-RF) |
-| Digit Recognizer | SVM | [Digit-Recognizer-SVM](https://github.com/partha0059/Digit-Recognizer-SVM) |
-| Diabetes Prediction | Gradient Boosting | [Diabetes-Gradient-Boosting](https://github.com/partha0059/Diabetes-Gradient-Boosting) |
-| Wine Quality Prediction | XGBoost | [Wine-Quality-XGBoost](https://github.com/partha0059/Wine-Quality-XGBoost) |
+| Digit & House Valuation | SVM / SVR | [Digit-Recognizer-SVM](https://github.com/partha0059/Digit-Recognizer-SVM) |
+| Oncology & Diabetes Apps | Gradient Boosting | [Diabetes-Gradient-Boosting](https://github.com/partha0059/Diabetes-Gradient-Boosting) |
+| Sommelier & Escalation | XGBoost | [Wine-Quality-XGBoost](https://github.com/partha0059/Wine-Quality-XGBoost) |
 | Iris Spatial Clustering | K-Means | [Iris-KMeans-Clustering](https://github.com/partha0059/Iris-KMeans-Clustering) |
 | Wine Agglomeration | Hierarchical | [Hierarchical-Wine-Clustering](https://github.com/partha0059/Hierarchical-Wine-Clustering) |
-| Density & Noise Mapper| DBSCAN | [DBSCAN-Density-Mapper](https://github.com/partha0059/DBSCAN-Density-Mapper) |
-| Validation Visualizer | Cross Validation | [Cross-Validation-Visualizer](https://github.com/partha0059/Cross-Validation-Visualizer) |
+| Density Mapper | DBSCAN | [DBSCAN-Density-Mapper](https://github.com/partha0059/DBSCAN-Density-Mapper) |
+| PCA Visualizer | Principal Component Analysis | [PCA-Dimensionality-Reduction](https://github.com/partha0059/PCA-Dimensionality-Reduction) |
+| CV Visualizer | Cross Validation | [Cross-Validation-Visualizer](https://github.com/partha0059/Cross-Validation-Visualizer) |
 | Importance Engine | Feature Selection | [Feature-Selection-Engine](https://github.com/partha0059/Feature-Selection-Engine) |
