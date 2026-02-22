@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# But keep these essential files
+!app.py
+!requirements.txt
+!Coffee_Sales_model.pkl
+!coffee_shop_sales_dataset.xlsx
+!README.md
+!.gitignore

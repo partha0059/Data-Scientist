@@ -1,0 +1,518 @@
+/* Google Fonts - Professional Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* ===== CORE BACKGROUND - PURE BLACK ===== */
+.stApp {
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Add subtle grid pattern overlay for depth */
+.stApp::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(0, 210, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===== GLASSMORPHIC CONTAINER - ENHANCED ===== */
+.glass-container {
+    background: rgba(15, 15, 15, 0.85);
+    box-shadow:
+        0 8px 32px 0 rgba(0, 210, 255, 0.15),
+        0 0 60px rgba(0, 210, 255, 0.08),
+        inset 0 0 80px rgba(0, 210, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1.5px solid rgba(0, 210, 255, 0.3);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Animated glow effect on hover */
+.glass-container:hover {
+    border-color: rgba(0, 210, 255, 0.5);
+    box-shadow:
+        0 8px 40px 0 rgba(0, 210, 255, 0.25),
+        0 0 80px rgba(0, 210, 255, 0.15),
+        inset 0 0 100px rgba(0, 210, 255, 0.08);
+    transition: all 0.4s ease;
+}
+
+/* ===== SIDEBAR - PROFESSIONAL BLACK ===== */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+    border-right: 2px solid rgba(0, 210, 255, 0.25);
+}
+
+section[data-testid="stSidebar"]>div {
+    background: transparent;
+}
+
+/* Sidebar text styling */
+section[data-testid="stSidebar"] .element-container {
+    color: #e0e0e0;
+}
+
+/* ===== HEADERS - BOLD AND MODERN ===== */
+h1 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 2.8rem !important;
+    letter-spacing: -0.5px;
+    text-shadow:
+        0 0 20px rgba(0, 210, 255, 0.5),
+        0 0 40px rgba(0, 210, 255, 0.3),
+        2px 2px 8px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, #00d2ff, #00b8e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem !important;
+}
+
+h2 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+    color: #00d2ff !important;
+    font-weight: 500 !important;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+h4 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* ===== INPUT FIELDS - SLEEK DESIGN ===== */
+.stNumberInput input {
+    background: rgba(20, 20, 20, 0.9) !important;
+    color: #ffffff !important;
+    border: 1.5px solid rgba(0, 210, 255, 0.4) !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease;
+}
+
+.stNumberInput input:focus {
+    border-color: rgba(0, 210, 255, 0.8) !important;
+    box-shadow:
+        0 0 0 3px rgba(0, 210, 255, 0.15),
+        0 0 20px rgba(0, 210, 255, 0.3) !important;
+    outline: none !important;
+}
+
+/* Input labels */
+.stNumberInput label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 8px !important;
+}
+
+/* ===== BUTTONS - PREMIUM GRADIENT ===== */
+.stButton>button {
+    background: linear-gradient(135deg, #00d2ff 0%, #0099cc 50%, #006b8f 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 4px 20px rgba(0, 210, 255, 0.4),
+        0 0 40px rgba(0, 210, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.stButton>button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.stButton>button:hover::before {
+    left: 100%;
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 8px 30px rgba(0, 210, 255, 0.6),
+        0 0 60px rgba(0, 210, 255, 0.4);
+}
+
+.stButton>button:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* ===== EXPANDER - CLEAN DESIGN ===== */
+.streamlit-expanderHeader {
+    background: rgba(20, 20, 20, 0.7) !important;
+    border: 1px solid rgba(0, 210, 255, 0.3) !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.streamlit-expanderHeader:hover {
+    background: rgba(30, 30, 30, 0.8) !important;
+    border-color: rgba(0, 210, 255, 0.5) !important;
+}
+
+/* ===== DATAFRAME/TABLES - MODERN STYLING ===== */
+.stDataFrame {
+    background: rgba(15, 15, 15, 0.9) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.dataframe {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+.dataframe thead th {
+    background: rgba(0, 210, 255, 0.2) !important;
+    color: #00d2ff !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid rgba(0, 210, 255, 0.5) !important;
+    padding: 12px !important;
+}
+
+.dataframe tbody td {
+    background: rgba(20, 20, 20, 0.5) !important;
+    color: #e0e0e0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 10px !important;
+}
+
+.dataframe tbody tr:hover {
+    background: rgba(0, 210, 255, 0.1) !important;
+}
+
+/* ===== DEVELOPER CARD - ELEGANT DESIGN ===== */
+.developer-card {
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.95));
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 25px;
+    border: 1.5px solid rgba(0, 210, 255, 0.35);
+    box-shadow:
+        0 4px 20px rgba(0, 210, 255, 0.15),
+        inset 0 0 40px rgba(0, 210, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.developer-card:hover {
+    border-color: rgba(0, 210, 255, 0.6);
+    box-shadow:
+        0 6px 30px rgba(0, 210, 255, 0.25),
+        inset 0 0 60px rgba(0, 210, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.developer-card h4 {
+    color: #00d2ff !important;
+    margin-bottom: 10px;
+}
+
+.developer-card p {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+/* ===== TECH BADGES - MODERN PILLS ===== */
+.tech-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 4px 3px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.25), rgba(0, 150, 200, 0.25));
+    border: 1px solid rgba(0, 210, 255, 0.4);
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #00d2ff;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.4), rgba(0, 150, 200, 0.4));
+    border-color: rgba(0, 210, 255, 0.7);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+/* ===== MARKDOWN TEXT STYLING ===== */
+p {
+    color: #e0e0e0 !important;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+strong {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* ===== HORIZONTAL RULE ===== */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 210, 255, 0.5), transparent);
+    margin: 1.5rem 0;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00d2ff, #0099cc);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00e5ff, #00b8e6);
+}
+
+/* ===== RESULT CARD - STUNNING DISPLAY ===== */
+.result-card {
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(25, 25, 25, 0.95));
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 900px;
+    position: relative;
+    animation: slideInScale 0.6s ease-out;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+/* Subtle glittering border animation */
+.glitter-border {
+    position: relative;
+    animation: borderGlow 4s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+
+    0%,
+    100% {
+        filter: brightness(1) saturate(1);
+    }
+
+    50% {
+        filter: brightness(1.15) saturate(1.2);
+    }
+}
+
+/* Result header with gradient */
+.result-header {
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.result-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent,
+            rgba(255, 255, 255, 0.05),
+            transparent);
+    animation: shimmer 6s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+.result-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Subtle pulsing glow effect */
+.pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 15px rgba(255, 255, 255, 0.3),
+            0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 40px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Result content area */
+.result-content {
+    padding: 2rem 2.5rem;
+}
+
+.profile-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 210, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
+.profile-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.profile-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e8e8e8 !important;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Input data card */
+.input-data-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    animation: fadeInUp 0.5s ease-out 0.2s both;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.data-label {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    font-weight: 500;
+}
+
+.data-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px currentColor;
+}
+
+/* Slide in and scale animation */
+@keyframes slideInScale {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Sparkle effect for special emphasis */
+.result-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%,
+            rgba(255, 255, 255, 0.15) 0%,
+            transparent 10%),
+        radial-gradient(circle at 80% 30%,
+            rgba(255, 255, 255, 0.15) 0%,
+            transparent 10%);
+    pointer-events: none;
+    animation: sparkle 6s ease-in-out infinite;
+    opacity: 0.6;
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}

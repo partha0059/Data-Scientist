@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Decision Tree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-container">
+            <div class="logo-area">
+                <img src="{{ url_for('static', filename='images/pizza_slice.png') }}" alt="Pizza Slice"
+                    class="header-icon">
+                <h1>Pizza Predictor</h1>
+            </div>
+        </header>
+
+        <div class="card glass">
+            <form action="/predict" method="post">
+                <div class="form-group">
+                    <label for="hungry">Am I Hungry?</label>
+                    <select name="hungry" id="hungry" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weekend">Is It Weekend?</label>
+                    <select name="weekend" id="weekend" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-predict">Predict</button>
+                </div>
+            </form>
+
+            {% if prediction %}
+            <div class="result-box fade-in">
+                <h2>Result:</h2>
+                <p class="prediction-text">{{ prediction }}</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <footer>
+            <p class="footer-text">Project by <strong>Partha Sarathi R</strong></p>
+        </footer>
+    </div>
+</body>
+
+</html>

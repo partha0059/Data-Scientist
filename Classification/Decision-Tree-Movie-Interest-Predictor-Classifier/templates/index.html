@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch | Predict Your Interest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="video-background">
+        <!-- We'll use a CSS gradient as fallback or a placeholder for now to ensure no broken links -->
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>CineMatch</h1>
+            <p class="subtitle">Discover Your Cinematic Persona</p>
+        </header>
+
+        <main>
+            {% if prediction %}
+            <div class="result-card fade-in">
+                <h2>Your Interest Is</h2>
+                <div class="prediction-box">
+                    <span class="icon">
+                        {% if prediction == 'Action' %} 🎭
+                        {% elif prediction == 'Animation' %} 🎨
+                        {% elif prediction == 'Drama' %} 🎭
+                        {% else %} 🎬
+                        {% endif %}
+                    </span>
+                    <h1 class="prediction-text">{{ prediction }}</h1>
+                </div>
+                <a href="/" class="btn secondary">Predict Again</a>
+            </div>
+            {% else %}
+            <form action="/" method="POST" class="glass-form fade-in">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" text="Age" required min="1" max="100"
+                        placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn primary">Reveal Interest</button>
+            </form>
+            {% endif %}
+
+            <div class="actions">
+                <a href="/visualization" class="btn tertiary">View Decision Tree Model</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created by <strong>Partha Sarathi R</strong></p>
+            <p class="small">Powered by Decision Tree (Gini & Entropy) Algorithm</p>
+        </footer>
+    </div>
+</body>
+
+</html>

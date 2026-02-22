@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --success-color: #27ae60;
+    --bg-color: #f5f6fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --border-color: #dcdde1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    padding: 2rem 0;
+}
+
+/* Header Styles */
+.header-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+}
+
+/* Pizza Icon - No Background */
+.header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Card Styles */
+.card {
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* BOLD BLACK LABELS */
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    /* Extra Bold */
+    color: #000000;
+    /* Pure Black */
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    background: #fdfdfd;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    transition: border-color 0.2s;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.btn-predict {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.btn-predict:hover {
+    background: var(--secondary-color);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 5px solid var(--success-color);
+    text-align: left;
+}
+
+.result-box h2 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.prediction-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.footer-text {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #95a5a6;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

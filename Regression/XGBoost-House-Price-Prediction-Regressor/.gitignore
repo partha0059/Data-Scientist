@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (too large for GitHub - regenerate with train_exact.py)
+model.pkl
+xgb_model.pkl
+
+# Training scripts (keep only train_exact.py)
+train_model.py
+train_simple.py
+train_ultra.py
+analyze_and_train.py
+
+# Artifacts
+.gemini/
