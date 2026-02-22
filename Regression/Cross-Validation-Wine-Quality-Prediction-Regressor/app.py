@@ -1,4 +1,5 @@
-import streamlit as st\n
+import streamlit as st
+
 st.markdown('''
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
@@ -803,4 +804,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-\n\nst.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)\n
+
+
+st.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)

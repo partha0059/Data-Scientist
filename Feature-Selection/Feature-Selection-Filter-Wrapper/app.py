@@ -3,7 +3,8 @@
 # Breast Cancer Dataset
 # ==========================================
 
-import streamlit as st\n
+import streamlit as st
+
 st.markdown('''
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
@@ -206,4 +207,6 @@ with col4:
 with col5:
     st.write("### Wrapper Method Features")
     for f in wrapper_features:
-        st.write("-", f)\n\nst.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)\n
+        st.write("-", f)
+
+st.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)

@@ -2,7 +2,8 @@
 # Hierarchical Clustering - Iris Segmentation
 # ==========================================
 
-import streamlit as st\n
+import streamlit as st
+
 st.markdown('''
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
@@ -143,4 +144,6 @@ if st.button("Predict Cluster"):
     elif cluster == 1:
         st.warning("Likely resembles Versicolor-type cluster characteristics")
     else:
-        st.error("Likely resembles Virginica-type cluster characteristics")\n\nst.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)\n
+        st.error("Likely resembles Virginica-type cluster characteristics")
+
+st.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)

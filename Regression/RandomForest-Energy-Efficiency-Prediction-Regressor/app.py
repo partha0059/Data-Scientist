@@ -3,7 +3,8 @@
 # Random Forest Regression
 # ==========================================
 
-import streamlit as st\n
+import streamlit as st
+
 st.markdown('''
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
@@ -167,4 +168,6 @@ if st.button("Predict Heating Load"):
     elif prediction < 35:
         st.warning("⚖️ Moderate Energy Efficiency")
     else:
-        st.error("⚠️ Low Energy Efficiency – High Heating Demand")\n\nst.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)\n
+        st.error("⚠️ Low Energy Efficiency – High Heating Demand")
+
+st.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)

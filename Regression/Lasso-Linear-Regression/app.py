@@ -1,4 +1,5 @@
-import streamlit as st\n
+import streamlit as st
+
 st.markdown('''
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
@@ -402,4 +403,6 @@ st.markdown("""
     Lasso &amp; Linear Regression Model &nbsp;|&nbsp;
     <strong style='color:#4b6a8f'>Partha Sarathi R</strong>
 </div>
-""", unsafe_allow_html=True)\n\nst.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)\n
+""", unsafe_allow_html=True)
+
+st.markdown('<div class="premium-footer">Engineered by Partha Sarathi R</div>', unsafe_allow_html=True)
