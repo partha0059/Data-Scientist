@@ -1,4 +1,8 @@
-# ==========================================
+import os
+import sys
+# Fix for Streamlit Cloud deployment: Change working directory to the app's directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+\n# ==========================================
 # Energy Efficiency - Heating Load Predictor
 # Random Forest Regression
 # ==========================================

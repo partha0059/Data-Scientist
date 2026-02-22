@@ -1,4 +1,8 @@
-from flask import Flask, render_template, request
+import os
+import sys
+# Fix for Streamlit Cloud deployment: Change working directory to the app's directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+\nfrom flask import Flask, render_template, request
 import pickle
 import numpy as np
 

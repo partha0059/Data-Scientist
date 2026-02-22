@@ -1,4 +1,8 @@
-import streamlit as st
+import os
+import sys
+# Fix for Streamlit Cloud deployment: Change working directory to the app's directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+\nimport streamlit as st
 
 st.markdown('''
 <style>
